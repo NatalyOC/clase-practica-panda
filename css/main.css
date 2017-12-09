@@ -24,7 +24,7 @@ body{
     background: #ABE188 ;
 }
 .img-small{
-    text-align: center;
+    
     width: 100%;
     border:6px solid #fff;
 }
@@ -47,11 +47,14 @@ body{
 .bgd-color-green{
     background: #ABE188 ;
 }
+.footer{
+    font-size: 0.8em;
+}
 /*sistema grilla*/
 .row{
     width: 100%;
     margin:2% auto;
-   /*  background: #fff; */
+    /* background: #fff; */
     overflow: hidden;
     /*todo los contenedores deben tener overflow hidden para que regresen a su sitio*/
 }
@@ -70,7 +73,7 @@ body{
 
 /*tres columnas*/
 .content {
-    width: 49%;
+    width: 46%;
 }
 .empty{
     width: 23.5%;
@@ -78,10 +81,48 @@ body{
 .center-column .column:nth-child(3n){
     margin-right: 0;
 }
-/* cuatro columnas*/
+/**/
+.four-column .column{
+    width: 96.5%;
+    margin-right: 0;
+}
+
+/*Small Grid - Mobile First*/
+@media (min-width:480px){
+    .one-column .column{
+        width: 100%;
+    }
+    .four-column .column{
+        width: 49%;
+    }
+    .four-column .column:nth-child(2n){
+        margin-right: 0;
+    }
+}
+/* Medium Grid */
+@media (min-width:768px){
+    .one-column .column{
+        width: 100%;
+    }
+    .four-column .column{
+        width: 49%;
+    }
+    .four-column .column:nth-child(2n){
+        margin-right: 0;
+    }
+}
+/*Large Grid*/
+@media (min-width:992px){
+    /* cuatro columnas*/
 .four-column .column{
     width: 23.2%;
+    margin-right: 2%
 }
+.four-column .column:nth-child(2n){
+    margin-right: 2%;
+} 
+
 .four-column .column:nth-child(4n){
     margin-right: 0;
+}
 }
