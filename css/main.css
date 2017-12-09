@@ -1,0 +1,87 @@
+/* seteamos */
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+/* #ABE188 */
+body{
+    background: #F78E69;
+    font-family: raleway;
+    color:#fff;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.center-column{
+    background: #ABE188 ;
+}
+.img-small{
+    text-align: center;
+    width: 100%;
+    border:6px solid #fff;
+}
+.imagen-large{
+    width: 100%;
+}
+.content{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #F78E69;
+}
+.p-content{
+    font-size: 12px;
+    
+}
+.title{
+    margin: 10px;
+  
+}
+.bgd-color-green{
+    background: #ABE188 ;
+}
+/*sistema grilla*/
+.row{
+    width: 100%;
+    margin:2% auto;
+   /*  background: #fff; */
+    overflow: hidden;
+    /*todo los contenedores deben tener overflow hidden para que regresen a su sitio*/
+}
+.column{
+    
+    float: left;
+    margin-right: 2%;
+    padding: 1em 0;
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+/*una columna */
+.one-column .column{
+    width: 100%;
+}
+
+/*tres columnas*/
+.content {
+    width: 49%;
+}
+.empty{
+    width: 23.5%;
+}
+.center-column .column:nth-child(3n){
+    margin-right: 0;
+}
+/* cuatro columnas*/
+.four-column .column{
+    width: 23.2%;
+}
+.four-column .column:nth-child(4n){
+    margin-right: 0;
+}
